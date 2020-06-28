@@ -24,8 +24,9 @@ IPv4Address::IPv4Address(const std::string& address)
 bool IPv4Address::operator==(const IPv4Address& address) const
 {
     for (auto i = 0U; i < IPv4Address::length; ++i) {
-        if (m_address[i] != address.m_address[i])
+        if (m_address[i] != address.m_address[i]) {
             return false;
+        }
     }
     return true;
 }
@@ -33,8 +34,9 @@ bool IPv4Address::operator==(const IPv4Address& address) const
 bool IPv4Address::operator<(const IPv4Address& address) const
 {
     for (auto i = IPv4Address::length - 1U; i != 0; --i) {
-        if (m_address[i] < address.m_address[i])
+        if (m_address[i] < address.m_address[i]) {
             return true;
+        }
     }
     return false;
 }
@@ -42,8 +44,9 @@ bool IPv4Address::operator<(const IPv4Address& address) const
 bool IPv4Address::operator>(const IPv4Address& address) const
 {
     for (auto i = IPv4Address::length - 1U; i != 0; --i) {
-        if (m_address[i] > address.m_address[i])
+        if (m_address[i] > address.m_address[i]) {
             return true;
+        }
     }
     return false;
 }

@@ -75,3 +75,7 @@ TEST(EnumeratingIPv4AddressInRange, 1_0_0_127IsGreaterThan0_255_0_0)
 }
 
 TEST(EnumeratingIPv4AddressInRange, DISABLED_ReturnsAddressesBetween0_0_0_0And0_0_0_1) {}
+TEST(EnumeratingIPv4AddressInRange, DISABLED_ReturnsAddressesBetween0_0_0_0And0_0_1_0) {}
+TEST(EnumeratingIPv4AddressInRange, DISABLED_ReturnsAddressesBetween0_0_0_0And0_1_0_0) {}
+TEST(EnumeratingIPv4AddressInRange, DISABLED_ReturnsAddressesBetween0_0_0_0And1_0_0_0) {}
+TEST(EnumeratingIPv4AddressInRange, DISABLED_ReturnsAddressesBetween0_0_1_0And0_0_0_0) {}
